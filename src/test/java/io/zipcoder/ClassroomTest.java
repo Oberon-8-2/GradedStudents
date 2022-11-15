@@ -35,7 +35,7 @@ public class ClassroomTest {
             // : Given
             int students =0;
             int maxNumberOfStudents = 1;
-            Classroom classroom = new Classroom(maxNumberOfStudents);
+            Classroom classroom = new Classroom();
             Double[] examScores = {100.0, 150.0, 250.0, 0.0};
             Student student = new Student("Leon", "Hunter", examScores);
 
@@ -69,7 +69,7 @@ public class ClassroomTest {
             Student s2 = new Student("Aishwarya", "Rai", s2Scores);
 
             Student[] students = new Student[]{s1, s2};
-            Classroom classroom = new Classroom();
+            Classroom classroom = new Classroom(students);
 
             classroom.removeStudent("Leon", "Hunter");
 
@@ -96,7 +96,7 @@ public class ClassroomTest {
             Student s4 = new Student("Diana", "Haiden", s4Scores);
 
             Student[] students = new Student[]{s1, s2, s3, s4};
-            Classroom classroom = new Classroom();
+            Classroom classroom = new Classroom(students);
 
             classroom.getStudentByScore();
         }
@@ -127,7 +127,7 @@ public class ClassroomTest {
 
             Student[] students = new Student[]{s1,s2,s3,s4,s5,s6,s7,s8,s9,s10};
 
-            Classroom classroom = new Classroom();
+            Classroom classroom = new Classroom(students);
 
             classroom.getGradeBook();
         }

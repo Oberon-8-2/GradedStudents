@@ -9,12 +9,12 @@ public class Classroom {
     Student[] students;
     int maxNumberOfStudents;
 
-    public Classroom(int maxNumberOfStudents) {
-        this.students = students;
-        this.maxNumberOfStudents = maxNumberOfStudents;
+    public Classroom(Student[] stu) {
+        this.students =stu;
+       // this.maxNumberOfStudents = maxNumberOfStudents;
     }
     public Classroom (){
-        students = new Student[30];
+       // students = new Student[30];
     }
 
     public Student[] getStudents() {
